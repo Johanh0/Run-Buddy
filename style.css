@@ -1,0 +1,141 @@
+/* GENERAL */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+
+:root {
+    --primary-color: #FFB703;
+    --secondary-color: #042332;
+    --orange: #FB8500;
+    --blue: #8ECAE6;
+    --black: #2C2C2C;
+    --white: #DEDEE6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* NAV */
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 0 100px;
+    width: 100vw;
+    height: 70px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.nav p {
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: ease-in-out 1s;
+}
+
+.nav p:hover {
+    transition: ease-in-out 1s;
+    transform: scale(1.1);
+}
+
+.nav p span {
+    color: var(--primary-color);
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 25px;
+    font-size: 1.5rem;
+    transition: ease-in-out 1s;
+}
+
+.nav ul li a:hover {
+    font-size: 1.7rem;
+    transform: scale(0.5);
+    transition: ease-in-out 1s;
+    color: var(--primary-color);
+}
+
+
+/* HERO */
+
+
+.hero {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+    background-image: url(./assets/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero .hero-form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 100px;
+    background-color: var(--primary-color);
+    border: 3px solid var(--secondary-color);
+    border-radius: 25px;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.hero-form_container form {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.hero-form_container form input {
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 22px;
+}
+
+.no-flex {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.no-flex p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.hero-form_container button {
+    width: 50%;
+    height: 33px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: none;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
