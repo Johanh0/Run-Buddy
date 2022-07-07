@@ -7,8 +7,8 @@
     --primary-color: #FFB703;
     --secondary-color: #042332;
     --orange: #FB8500;
-    --blue: #8ECAE6;
-    --black: #2C2C2C;
+    --blue: #77aac2;
+    --dark-blue: #1F5375;
     --white: #DEDEE6;
 }
 
@@ -24,6 +24,15 @@ html {
     scroll-behavior: smooth;
 }
 
+h2 {
+    font-size: 5rem;
+    color: var(--secondary-color);
+}
+
+p {
+    font-size: 1.8rem;
+    color: var(--blue);
+}
 /* NAV */
 
 
@@ -39,6 +48,7 @@ html {
 }
 
 .nav p {
+    color: white;
     font-size: 2.5rem;
     cursor: pointer;
     transition: ease-in-out 1s;
@@ -86,6 +96,15 @@ html {
     background-image: url(./assets/hero-bg.jpg);
     background-position: center;
     background-size: cover;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
 }
 
 .hero .hero-form_container {
@@ -138,4 +157,146 @@ html {
     color: var(--primary-color);
     background-color: var(--secondary-color);
     cursor: pointer;
+    transition: ease-in-out 1s;
+}
+
+.hero-form_container button:hover {
+    transition: ease-in-out 1s;
+    transform: scale(1.2);
+}
+
+/* WHAT WE DO SECTION */
+
+#what-we-do-section {
+    width: 100vw;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 80px;
+    text-align: center;
+}
+
+#what-we-do-section h2 {
+    display: inline-block;
+    padding: 0 80px 30px 80px;
+    margin: 50px;
+    border-bottom: 3px solid var(--primary-color);
+
+}
+
+/* WHAT YOU DO SECTION */
+
+#what-you-do-section {
+    width: 100vw;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 80px;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+#what-you-do-section h2 {
+    display: inline-block;
+    padding: 0 80px 30px 80px;
+    padding-bottom: 30px;
+    margin: 50px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+#what-you-do-section div {
+    margin: 80px 0 80px 0;
+}
+
+#what-you-do-section div p {
+    color: var(--blue);
+    text-align: center;
+}
+
+#what-you-do-section img {
+    width: 15%;
+}
+
+#what-you-do-section h3 {
+    font-size: 3.5rem;
+    color: var(--dark-blue);
+}
+
+/* MEET THE TRAINERS SECTION */
+
+#your-trainers-section {
+    width: 100vw;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 80px;
+    text-align: center;
+}
+
+#your-trainers-section h2 {
+    display: inline-block;
+    padding: 0 80px 30px 80px;
+    padding-bottom: 30px;
+    margin: 50px;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.trainer {
+    display: flex;
+    text-align: center;
+    width: 70vw;
+    height: fit-content;
+    margin: 0 auto 30px auto;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.trainer_rightImg {
+    flex-direction: row-reverse;
+}
+
+#txt-align-end{
+    text-align: end;
+}
+
+.trainer h3,h4,p {
+    color: var(--primary-color);
+    text-align: start;
+}
+
+.trainer-bio h3 {
+    font-size: 3.3rem;
+}
+
+.trainer-bio h4 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.trainer img {
+    width: 30%;
+    background-size: cover;
+}
+
+.trainer-bio {
+    padding: 50px;
+}
+
+
+/* REACH OUT SECTION */
+
+#reach-out-section {
+    width: 100vw;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 80px;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+#reach-out-section h2 {
+    display: inline-block;
+    padding: 0 80px 30px 80px;
+    padding-bottom: 30px;
+    margin: 50px;
+    border-bottom: 3px solid var(--blue);
+    color: var(--primary-color);
 }
