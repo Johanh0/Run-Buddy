@@ -1,0 +1,110 @@
+/* GENERAL */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+
+:root {
+    --primary-color: #FFB703;
+    --secondary-color: #042332;
+    --orange: #FB8500;
+    --blue: #77aac2;
+    --dark-blue: #1F5375;
+    --white: #DEDEE6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-size: 5rem;
+    color: var(--secondary-color);
+}
+
+p {
+    font-size: 1.8rem;
+    color: var(--blue);
+}
+/* NAV */
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 0 100px;
+    width: 100vw;
+    height: 70px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.nav p {
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: ease-in-out 1s;
+}
+
+.nav p:hover {
+    transition: ease-in-out 1s;
+    transform: scale(1.1);
+}
+
+.nav p span {
+    color: var(--primary-color);
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 25px;
+    font-size: 1.5rem;
+    transition: ease-in-out 1s;
+}
+
+.nav ul li a:hover {
+    font-size: 1.7rem;
+    transform: scale(0.5);
+    transition: ease-in-out 1s;
+    color: var(--primary-color);
+}
+
+
+/* HERO */
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    background-image: url(../assets/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+}
+
+.hero h1 {
+    display: inline-block;
+    padding: 0 80px 30px 80px;
+    padding-bottom: 30px;
+    margin: 50px;
+    font-size: 5rem;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+}

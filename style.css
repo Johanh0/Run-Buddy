@@ -92,10 +92,11 @@ p {
     justify-content: flex-end;
     align-items: center;
     width: 100vw;
-    height: 70vh;
+    height: fit-content;
     background-image: url(./assets/hero-bg.jpg);
     background-position: center;
     background-size: cover;
+    padding: 80px;
 }
 
 .hero h2 {
@@ -292,6 +293,11 @@ p {
     background-color: var(--secondary-color);
 }
 
+#reach-out-section  p, address {
+    color: white;
+    font-size: 2rem;
+}
+
 #reach-out-section h2 {
     display: inline-block;
     padding: 0 80px 30px 80px;
@@ -299,4 +305,50 @@ p {
     margin: 50px;
     border-bottom: 3px solid var(--blue);
     color: var(--primary-color);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+}
+
+.contact-info_txt h3 {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.contact-info_txt a {
+    color: var(--primary-color);
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 80px;
+    width: 100vw;
+    height: fit-content;
+    background-color: var(--primary-color);
+}
+
+.footer-txt p{
+    color: var(--secondary-color);
+    font-size: 3rem;
+}
+
+.footer-policy {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footer-policy a {
+    color: var(--secondary-color);
+}
+
+.footer-policy p {
+    color: var(--blue);
 }
